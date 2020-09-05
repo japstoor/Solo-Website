@@ -31,6 +31,14 @@ $(function(){
     
 });
 
+/*-----------------responsive tabs----------------*/
+
+$(function () {
+    $("#servies-tabs").responsiveTabs({
+        animation: 'slide'
+    });
+});
+
 
 
 
