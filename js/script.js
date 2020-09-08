@@ -39,36 +39,31 @@ $(function () {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//------------------------ portfolio ----------------------
+$(function(){
+    $(".filter-btn").click( function(){
+        var value = $(this).attr("data-filter");
+        if(value == "*" ){
+            $(".filter").show("1000");
+        } 
+        else{
+        $(".filter").not("." + value).hide("1000");
+        $(".filter").filter("." + value).show("1000");
+        }
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+});
+/*--------------------Magnifier---------------*/
+$(function (){
+    $('#portfolio-wapper').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+        
+      });
+});
 
 
 

@@ -153,8 +153,8 @@ section {
 }
 .btn-yellow:hover, 
 .btn-yellow:focus {
-    color: #212226;
-    background-color: #212226;
+    color: #fff;
+    background-color: #212126;
     border: 1px solid #212126;
 }
 /* ---------------About --------------*/
@@ -493,7 +493,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-weight: 700;
     border-bottom: 3px solid #f4c613;
     padding-bottom: 5px;
-    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;-o-transition: border-color 300ms linear;transition: border-color 300ms linear;
 }
 
 .service-tab .col-md-6 {
@@ -526,4 +526,117 @@ ul.social-list li:nth-child(3) a:hover {
 .service-tab p {
     line-height: 24px;
     margin-bottom: 30px;
+}
+
+/*---------------Portfolio-----------------*/
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
+/*-------------Filter button---------------*/
+#isotope-filters{
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;box-shadow: none;
+}
+#isotope-filters button span{
+    transition: border-color .4s ease-in-out;
+
+}
+#isotope-filters button.active span {
+    color: #f4c613;
+    border-bottom: 3px solid #f4c613;
+}
+
+/*------------Zome effect-----------*/
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s ease;transition: -webkit-transform .5s ease;-o-transition: transform .5s ease;transition: transform .5s ease;transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
+}
+
+/*-----------Overlay effect-------*/
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.9);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+    
+}
+
+/*-------Item details effect -----*/
+.porfolio-item-dertails {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);
+   
+}
+
+.porfolio-item-dertails h3 {
+    color: #f4c613;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(-20%);-ms-transform: translateY(-20%);transform: translateY(-20%);
+    -webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+
+}
+
+.porfolio-item-dertails span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11 auto 5px auto;
+}
+
+.porfolio-item-dertails p {
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(20%);-ms-transform: translateY(20%);transform: translateY(20%);
+    -webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+
+/*-----------show overlay on mouse hover--------*/
+.porfolio-item-dertails:hover  h3 {
+    -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);
+}
+
+.porfolio-item-dertails:hover  p{
+    -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
 }
