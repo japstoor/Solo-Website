@@ -985,3 +985,17 @@ ul.office-details li i {
     min-height: 164px;
     
 }
+
+/*-------------Footer-----------------*/
+footer {
+    background: #212126;
+    padding: 30px;
+   
+}
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+footer  p span {
+    color: #f4c613;
+}
