@@ -101,10 +101,47 @@ $(function(){
     });
 });
 
+/*---------------Navigation----------------*/
+/*---show and hide white navigation */
+
+$(function (){
+    showHideNav();
+    $(window).scroll(function(){
+        
+        showHideNav();
+
+ });
+ 
+ function showHideNav() {
+    if($(window).scrollTop () > 50 ) {
+        $ ("nav").addClass("white-nav-top");
+
+        $(".navbar-brand img").attr("src","img/logo/logo-dark.png");
+        // show back to top btn
+        $("#back-to-top").fadeIn();
+    } else {
+        $ ("nav").removeClass("white-nav-top");
+
+        $(".navbar-brand img").attr("src","img/logo/logo.png");
+
+        // hide back to top btn
+        $("#back-to-top").fadeOut();
+    }
+
+ }
+});
 
 
+$(function(){
+    $("a.smooth-scroll").click(function(event) {
+        event.preventDefault();
+        var section_id = $(this).attr("href");
 
-
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top
+        }, 1250, "easeInOutExpo");
+    });
+});
 
 
 
