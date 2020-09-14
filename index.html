@@ -33,8 +33,11 @@
     <link rel="stylesheet" href="css/magnific-pupup/magnific-popup.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-----Responsive CSS------->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="65">
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -42,9 +45,10 @@
 
     <!---------Header--------->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand fixed-top">
             
-               
+               <!--Mobile Menu Open Button-->
+               <span id="mobile-nav-open-btn">&#9776;</span>
 
                         <!--- LOGO --->
                         <a class="navbar-brand smooth-scroll" href="#home">
@@ -63,9 +67,23 @@
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
-                       
-                    
+            </div>
+            <!--Mobile Menu-->
+            <div class="mobile-nav">
+                <!--Mobile Menu Close Button-->
+                <span class="mobile-nav-close-btn">&times;</span>
                 
+                <div class="mobile-nav-content">
+                    <ul class="nav flex-column">
+                        <li class="d-block" ><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#team">Team</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Work</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -116,7 +134,7 @@
                     <div class="row">
 
                         <!-- about left side -->
-                        <div class="col-md-6">
+                        <div class="col-lg-6 ">
                             <div class="vertical-heading">
                                 <h5>WHO WE ARE</h5>
                                 <h2>A <strong>Story</strong><br>About Us</h2>
@@ -124,7 +142,7 @@
                         </div>
                         
                         <!-- about right side -->
-                        <div class="col-md-6">
+                        <div class="col-lg-6 ">
                             <div class="about-right">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat 
                                    laborum vel. Quae reiciendis autem ex facere soluta possimus cupiditate consequatur
@@ -137,7 +155,7 @@
                     </div>
                     <!-- About Bottom -->
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-lg-12">
                             <div class="about-bottom">
                                 <img src="img/about/about.png" alt="About Us" class=" img-fluid max-width: 100%; height: auto">
                             </div>
@@ -154,7 +172,7 @@
             <div class="container">
                 <div class="row">
                    
-                    <div class="col-md-4">
+                    <div class="col-lg-4 ">
                         <div class="about-item text-center">
                             <i class="fa fa-rocket" aria-hidden="true"></i>
                             <h3>Misssion</h3>
@@ -164,7 +182,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 ">
+                    <div class="col-lg-4 ">
                         <div class="about-item text-center">
                         <i class="fa fa-eye"></i>
                         <h3>Vision</h3>
@@ -174,13 +192,13 @@
                     </div>
                 </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 ">
                         <div class="about-item text-center">
                         <i class="fa fa-pencil"></i>
                         <h3>Passion</h3>
                         <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate. Omnis laudantium harum doloremque sapiente laboriosam. 
-                            Perferendis numquam architecto harum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fuga dolorum est tenetur. Possimus eaque accusantium, explicabo
+                            rerum, distinctio voluptatibus, placeat nihil numquam laborum qui dicta quas non veniam voluptates.</p>
                     </div>
                 </div>
                 
@@ -201,7 +219,7 @@
             <div class="container">
                 <!---team member-->
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div id="team-left">
                             <div class="vertical-heading">
                                 <h5>Who We Are</h5>
@@ -211,7 +229,8 @@
                                 Pariatur et iure quaerat fugiat accusantium? Ipsa amet tempora animi dicta harum odio rem.</p>
                         </div> 
                     </div>
-                    <div class="col-md-6">
+                    <!--Team Righr Side-->
+                    <div class="col-lg-6 col-md-6">
                        <div id="team-members" class="owl-carousel owl-theme">
                        <!--Team member 1-->
                        <div class="team-member">
@@ -328,7 +347,7 @@
             <div id="progress-elements">
                 <!-------------------Progress-Bars------------->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <!-------------Skill 1-------------------------->
                     <div class="skill">
                         <h4>Web Design</h4>
@@ -340,7 +359,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <!-------------Skill 2-------------------------->
                     <div class="skill">
                         <h4>Photoshop/Illustration</h4>
@@ -349,7 +368,7 @@
                             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
                           </div>
                     </div></div>
-                <div class="col-md-6"><!-------------Skill 1-------------------------->
+                <div class="col-lg-6 col-md-6"><!-------------Skill 1-------------------------->
                     <div class="skill">
                         <h4>Web Development</h4>
                       
@@ -358,7 +377,7 @@
                             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
                           </div>
                     </div></div>
-                <div class="col-md-6"><!-------------Skill 1-------------------------->
+                <div class="col-lg-6 col-md-6"><!-------------Skill 1-------------------------->
                     <div class="skill">
                         <h4>Degital Marketing</h4>
                    
@@ -381,7 +400,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="-md-12">
+                <div class="col-lg-12">
                  <div id="tech-statement" class="text-center">
                      <h3><i class="fa fa-quote-left"></i>  We Design and develop services for customer of all sizes, 
                          <br> specialzing in creating stylinsh, mordern websites and online stores.  <i class="fa fa-quote-right"></i></h3>
@@ -400,7 +419,7 @@
     <div class="content-box-lg">
         <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-lg-12 col-md-12 text-center">
                 <div class="horizontal-heading">
                     <h5>What We Do</h5>
                     <h2>Our Services</h2>
@@ -409,20 +428,20 @@
         </div>
 
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-lg-7 col-md-7">
                 <img src="img/services/laptop-lamp.png" alt="Laptop" class=" img-fluid max-width: 100%; height: auto">
 
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5 col-md-5">
                 <!---------Service 01------------>
                 <div class="service">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2">
                             <div class="icon text-right">
                                 <i class="fa fa-paint-brush"></i>
                             </div>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-lg-10 col-md-10">
                             <h5>Service 01</h5>
                             <h4>Web Designer</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis tempora commodi
@@ -433,12 +452,12 @@
                 </div>
                     <div class="service">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2">
                             <div class="icon text-right">
                                 <i class="fa fa-laptop" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-lg-10 col-md-10">
                             <h5>Service 02</h5>
                             <h4>Web Developer</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis tempora commodi
@@ -449,12 +468,12 @@
                 </div>
                 <div class="service">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2">
                             <div class="icon text-right">
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-lg-10 col-md-10">
                             <h5>Service 03</h5>
                             <h4>Degital Marketing</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis tempora commodi
@@ -484,11 +503,11 @@
             <div id="service-tab-1" class="service-tab">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <img src="img/services/service-tab-img-01.jpg" alt="creativity">
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="tab-bg">
                                 <h2>01</h2>
                                 <h3>Get More From Life Creativity</h3>
@@ -506,11 +525,11 @@
             <div id="service-tab-2" class="service-tab">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <img src="img/services/service-tab-img-02.jpg" alt="creativity">
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="tab-bg">
                                 <h2>02</h2>
                                 <h3>Get More From Life Creativity</h3>
@@ -528,11 +547,11 @@
             <div id="service-tab-3" class="service-tab">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <img src="img/services/service-tab-img-03.jpg" alt="creativity">
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="tab-bg">
                                 <h2>03</h2>
                                 <h3>Get More From Life Creativity</h3>
@@ -550,11 +569,11 @@
             <div id="service-tab-4" class="service-tab">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <img src="img/services/service-tab-img-04.jpg" alt="creativity">
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="tab-bg">
                                 <h2>04</h2>
                                 <h3>Get More From Life Creativity</h3>
@@ -580,13 +599,13 @@
     <div class="content-box-md">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12 col-md-12">
                     <div class="vertical-heading">
                         <h5>find out work</h5>
                         <h2>Our<br>Amazing <strong>Work</strong></h2>
                     </div>
                 </div>
-                <div class="class col-md-12">
+                <div class=" col-lg-12 col-md-12">
                     <!--Porfolio Iteme Filters ----->
                     <div id="isotope-filters">
                         <button class="btn active filter-btn" data-filter="*"><span>All</span></button>
@@ -603,7 +622,7 @@
             <div class="container-fluid">
                 <div class="row no-gutters">
                     
-                    <div class="col-md-3 desktop filter ">
+                    <div class="col-lg-3 col-md-6 col-12 desktop filter ">
                             <!-------Portfolio Item 01------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/001.jpg" title="Add Description">
@@ -621,7 +640,7 @@
                         </a>
                         </div>
                         </div>
-                        <div class="col-md-3 filter web ">
+                        <div class="col-lg-3 col-md-6 col-12 filter web ">
                             <!-------Portfolio Item 02------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/002.jpg" title="Add Description">
@@ -639,7 +658,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter web mobile logo isotope-container">
+                    <div class="col-lg-3 col-md-6 col-12 filter web mobile logo isotope-container">
                             <!-------Portfolio Item 03------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/003.jpg" title="Add Description">
@@ -657,7 +676,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter web logo web isotope-container">
+                    <div class="col-lg-3 col-md-6 col-12 filter web logo web isotope-container">
                             <!-------Portfolio Item 04------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/004.jpg" title="Add Description">
@@ -675,7 +694,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter web isotope-container">
+                    <div class="col-lg-3 col-md-6 col-12 filter web isotope-container">
                             <!-------Portfolio Item 05------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/005.jpg" title="Add Description">
@@ -693,7 +712,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter logo desktop isotope-container">
+                    <div class="col-lg-3 col-md-6 col-12 filter logo desktop isotope-container">
                             <!-------Portfolio Item 06------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/006.jpg" title="Add Description">
@@ -711,7 +730,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter web mobile isotope-container">
+                    <div class="col-lg-3 col-md-6 col-12 filter web mobile isotope-container">
                             <!-------Portfolio Item 07------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/007.jpg" title="Add Description">
@@ -729,7 +748,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 filter web mobile isotope-container">
+                    <div class="col-lg-3 col-md-6 filter web mobile isotope-container">
                             <!-------Portfolio Item 08------>
                             <div class="portfolio-item">
                             <a href="img/portfolio/008.jpg" title="Add Description">
@@ -763,21 +782,21 @@
 <section id="testimonials">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="vertical-heading">
                     <h5>Who We Are</h5>
                     <h2>What Our <br><strong>customer</strong> </h2>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8 ">
                 <div id="testimonial-slider" class="owl-carousel owl-theme">
                     <!----Testimonial 01-->
                     <div class="testimonial">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <h3>Quality Support</h3>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-6">
                                 <div class="stars text-right">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -791,10 +810,10 @@
                             dignissimos quas fuga asperiores eveniet itaque non cumque quia minima ipsa illum fugiat error. Reiciendis, quae.</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-3 col-6">
                                         <img src="img/testimonial/client-1.jpg" alt="client" class="img-fluid rounded-circle">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 col-md-3">
                                         <div class="author-name-des">
                                             <p>Joey Tribbiani</p>
                                             <p>Senior Marketing Manager</p>
@@ -806,10 +825,10 @@
                      <!----Testimonial 02-->
                      <div class="testimonial">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <h3>Quality Support</h3>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="stars test-right">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -823,10 +842,10 @@
                             dignissimos quas fuga asperiores eveniet itaque non cumque quia minima ipsa illum fugiat error. Reiciendis, quae.</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-2">
                                         <img src="img/testimonial/client-2.jpg" alt="client" class="img-fluid rounded-circle">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 com-sm-10">
                                         <div class="author-name-des">
                                             <p>Joq Martin</p>
                                             <p>Senior Developer</p>
@@ -839,10 +858,10 @@
                      <!----Testimonial 03-->
                      <div class="testimonial">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <h3>Quality Support</h3>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="stars test-right">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -856,10 +875,10 @@
                             dignissimos quas fuga asperiores eveniet itaque non cumque quia minima ipsa illum fugiat error. Reiciendis, quae.</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-2">
                                         <img src="img/testimonial/client-3.jpg" alt="client" class="img-fluid rounded-circle">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 col-md-10">
                                         <div class="author-name-des">
                                             <p>Rachel</p>
                                             <p>Product Manager</p>
@@ -880,7 +899,7 @@
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-lg-12 text-center">
                         <div class="horizontal-heading">
                             <h5>Lovely Customer</h5>
                             <h2>Our Pricing</h2>
@@ -888,7 +907,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <!--Pricing Table 01-->
                         <div class="pricing-table">
                             <div class="type">
@@ -896,10 +915,10 @@
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>29<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get all these awesome services with this great price.Get it now!</p>
                                     </div>
                                 </div>
@@ -916,7 +935,7 @@
                             </div>  
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 ">
                          <!--Pricing Table 02-->
                         <div class="pricing-table black">
                             <div class="type">
@@ -924,10 +943,10 @@
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>55<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get all these awesome services with this great price.Get it now!</p>
                                     </div>
                                 </div>
@@ -943,7 +962,7 @@
                                 <a class="btn btn-general btn-white" role="button" href="#" title="Get Started">Get Started</a>
                             </div>  
                         </div></div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4">
                          <!--Pricing Table 03-->
                         <div class="pricing-table">
                             <div class="type">
@@ -951,10 +970,10 @@
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>96<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get all these awesome services with this great price.Get it now!</p>
                                     </div>
                                 </div>
@@ -980,7 +999,7 @@
         <div class="content-box-md">
             <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12 ">
                     <div class="vertical-heading">
                                 <h5>fun Facts</h5>
                                 <h2>We Deliver<br><strong>Excellent</strong> Services</h2>
@@ -988,7 +1007,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-6">
                     <!--Stats Item 1---->
                     <div class="stats-item text-center">
                         <i class="fa fa-bar-chart"></i>
@@ -996,21 +1015,21 @@
                         <p>Years Experiance</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-6">
                     <!--Stats Item 2---->
                     <div class="stats-item text-center">
                         <i class="fa fa-codepen"></i>
                         <h3 class="counter">476</h3>
                         <p>Project Done</p>
                     </div></div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-6">
                     <!--Stats Item 3---->
                     <div class="stats-item text-center">
                         <i class="fa fa-trophy"></i>
                         <h3 class="counter">115</h3>
                         <p>Awards Received</p>
                     </div></div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-6">
                     <!--Stats Item 4---->
                     <div class="stats-item text-center">
                         <i class="fa fa-users"></i>
@@ -1027,7 +1046,7 @@
         <div class="content-box-sm">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-lg-12 col-md-12 text-center">
                         <div class="horizontal-heading">
                             <h5>Satisfied Clients</h5>
                             <h2>Our Happy <strong>Client</strong></h2>
@@ -1036,7 +1055,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12 col-md-12">
                     <div id="clients-list" class="owl-carousel owl-theme">
                         <!---Client 01----->
                         <div class="client">
@@ -1080,7 +1099,7 @@
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5 col-md-5">
                         <div id="blog-left">
                             <div class="vertical-heading">
                                 <h5>Latest News</h5>
@@ -1094,9 +1113,9 @@
                                  </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-8">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <!---Blog Post 1------>
                                 <div class="blog-post">
                                     <h4>Your Post Title</h4>
@@ -1104,16 +1123,16 @@
                                          <a href="#" >Read More ></a>
                                          <div class="post-meta">
                                              <div class="row">
-                                                 <div class="col-md-6">
+                                                 <div class="col-lg-6 col-md-8 col-5">
                                                      <p><img src="img/blog/user-1.jpg" alt="author" class="rounded-circle"> Daniel Brown</p>
                                                  </div>
-                                                 <div class="col-md-6">
+                                                 <div class="col-lg-6 col-md-4 col-7">
                                                     <p class="text-right">Sep 11,2020</p></div>
                                              </div>
                                          </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <!---Blog Post 2------>
                                 <div class="blog-post">
                                     <h4>Your Post Title</h4>
@@ -1121,10 +1140,10 @@
                                          <a href="#" >Read More ></a>
                                          <div class="post-meta">
                                              <div class="row">
-                                                 <div class="col-md-6">
-                                                     <p> <img src="img/blog/user-2.jpg" alt="author" class="rounded-circle"> Jhon Patter</p>
+                                                 <div class="col-lg-6 col-md-8 col-5">
+                                                     <p> <img src="img/blog/user-2.jpg" alt="author" class="rounded-circle">Jhon Patter</p>
                                                  </div>
-                                                 <div class="col-md-6">
+                                                 <div class="col-lg-6 col-md-4 col-7">
                                                     <p class="text-right">sep 03,2020</p>
                                                 </div>
                                              </div>
@@ -1143,7 +1162,7 @@
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <!---Contact left-->
                         <div id="content-left">
                             <div class="vertical-heading">
@@ -1153,21 +1172,21 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, neque quas ratione facilis similique,</p>
                        <div id="offices">
                            <div class="row">
-                               <div class="col-md-6">
+                               <div class="col-lg-6 col-md-6">
                                    <div class="office">
                                        <h4>United States</h4>
                                        <ul class="office-details">
                                            <li><i class="fa fa-mobile"></i> +(55)879 58 87 46</li>
-                                           <li><i class="fa fa-envelope-o"></i> support@solo.com</li>
+                                           <li><i class="fa fa-envelope-o"></i>support@solo.com</li>
                                            <li><i class="fa fa-map-marker"></i> <span>522 Mina Street building 05 <br>Newyor, USA</span></li>
                                        </ul>
                                    </div>
                                </div>
-                               <div class="col-md-6"> <div class="office">
+                               <div class="col-lg-6 col-md-6" > <div class="office">
                                 <h4>Australia</h4>
                                 <ul class="office-details">
                                     <li><i class="fa fa-mobile"></i> +(88) 457 87 74 87</li>
-                                    <li><i class="fa fa-envelope-o"></i> support@solo.com</li>
+                                    <li><i class="fa fa-envelope-o"></i>support@solo.com</li>
                                     <li><i class="fa fa-map-marker"></i> <span>507 Din Street building 55 <br>Sydeny, Australia</span></li>
                                 </ul>
                             </div>
@@ -1181,30 +1200,30 @@
                     </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <!---Contact-right---->
                         <div id="contact-right">
                             <form>
                                 <h4>Send Message</h4>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="name" placeholder="Your Name">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="email" placeholder="Email Address">
                                         </div>
                                     </div>
                                 
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="phone" placeholder="Phone Number">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="subject" placeholder="Subject">
                                         </div>
@@ -1229,13 +1248,13 @@
     <footer class="text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12 col-md-12">
                     <p>Copyright &copy; 2020 All Right Reserverd By <span>SOLO Inc</span></p>
                 </div>
             </div>
         </div>
         <!--- Back To Top------>
-        <a href="#home" id="back-to-top" class="btn btn-sm  btn-back-to-top smooth-scroll" title="home" role="button">
+        <a href="#home" id="back-to-top" class="btn btn-sm  btn-back-to-top smooth-scroll hidden-sm " title="home" role="button">
             <i class="fa fa-angle-up"></i>
         </a>
     </footer>
