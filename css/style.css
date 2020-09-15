@@ -39,7 +39,7 @@ section {
 #status {
     background-image: url(../img/preloader/preloader.gif);
     background-repeat: no-repeat;
-    width: 70ox;
+    width: 70px;
     height: 70px;
     position: relative;
     left: 50%;
@@ -63,7 +63,7 @@ section {
     width: auto;
     height: auto;
     z-index: -1;
-    background-image: url(../video/solo.jpg) no-repeat;
+    background: url(../video/solo.jpg) no-repeat;
     background-size: cover;
     
 }
@@ -102,7 +102,7 @@ section {
 }
 #home-text p {
     color: white;
-    font-size: 17;
+    font-size: 17px;
     font-weight: 100;
     margin: 8px 0  30px 0;
 }
@@ -289,6 +289,9 @@ section {
 /*-------Smooth transition---*/
 .about-item, .about-item i, .about-item hr {
     transition: all 400ms ease-in-out;
+}
+.about-item h3 p {
+    -webkit-transition: all 400ms linear;-o-transition: all 400ms linear;transition: all 400ms linear;
 }
 
 
@@ -508,7 +511,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     color: #212121;
-    text-transform: uppercases;
+    text-transform: uppercase;
     font-weight: 400;
     text-decoration: none;
 }
@@ -612,6 +615,7 @@ ul.social-list li:nth-child(3) a:hover {
     left: 0;
     right: 0;
     background: rgba(14, 14, 17, 0.9);
+    cursor: pointer;
     opacity: 0;
     -webkit-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
     
@@ -644,7 +648,7 @@ ul.social-list li:nth-child(3) a:hover {
     border-bottom: 1px solid #fff;
     height: 6px;
     width: 30px;
-    margin: 11 auto 5px auto;
+    margin: 11px auto 5px auto;
 }
 
 .porfolio-item-dertails p {
@@ -896,7 +900,7 @@ ul.social-list li:nth-child(3) a:hover {
     background: #fff;
     padding: 20px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border-radius: 6px;
+    border-radius: 4px;
 }
 .blog-post h4 {
     line-height: 40px;
@@ -1007,6 +1011,7 @@ footer {
 footer p {
     color: #fff;
     line-height: 20px;
+    margin: 0;
 }
 footer  p span {
     color: #f4c613;

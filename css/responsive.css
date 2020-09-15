@@ -68,7 +68,7 @@
         font-family: "Raleway", sans-serif;
         font-size: 13px;
         color: #212121;
-        text-transform: uppercases;
+        text-transform: uppercase;
         font-weight: 400;
         text-decoration: none;
     }
@@ -221,7 +221,7 @@
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     color: #212121;
-    text-transform: uppercases;
+    text-transform: uppercase;
     font-weight: 400;
     text-decoration: none;
 }

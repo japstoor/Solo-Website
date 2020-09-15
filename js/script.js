@@ -37,9 +37,11 @@ $(function(){
         
         $(".progress-bar").each(function(){
             $(this).animate({width: $(this).attr("aria-valuenow") + "%"
-        }, 1000);
+        }, 2000);
         });
-        this.distroy();
+        $('.progress-bar').on('click', function() {
+            waypoint.destroy()
+        })
     }, {offset: 'bottom-in-view'});
     
 });
