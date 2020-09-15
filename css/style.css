@@ -1142,3 +1142,22 @@ footer  p span {
     color: #f4c613;
     font-weight: 500;
 }
+
+/*-----Animation-----*/
+#home-heading-1 {
+    --animate-duration: 1.5s;
+  --animate-delay: 1s;
+}
+#home-heading-2 {
+    --animate-duration: 1.5s;
+  --animate-delay: 1.5s;
+}
+
+#home-btn {
+    --animate-duration: 1.5s;
+    --animate-delay: 2.5s;
+}
+#arrow-down i {
+    --animate-duration: 1.5s;
+    --animate-delay: 3s;
+}

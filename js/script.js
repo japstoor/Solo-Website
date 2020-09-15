@@ -180,3 +180,16 @@ $(function (){
         $(".mobile-nav").css("height", "0");
     });
 });
+
+/*-------------Animation------------*/
+// animate on scroll
+$(function(){
+    new WOW().init();
+});
+
+$(window).on('load', function (){
+    $("#home-heading-1").addClass("animate__animated animate__fadeInDown");
+    $("#home-heading-2").addClass("animate__animated animate__fadeInLeft");
+    $("#home-btn").addClass("animate__animated animate__zoomIn");
+    $("#arrow-down i").addClass("animate__animated animate__fadeOutDown animate__infinite");
+});
